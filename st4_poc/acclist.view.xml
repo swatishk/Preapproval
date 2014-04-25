@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="st4_poc.acclist" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+	<ObjectHeader title="Tab bar"
+            number="1"
+            numberUnit="1"></ObjectHeader>
+	<IconTabBar id="icontabBar" expandable="false" visible="true" selectedKey="" >
+	    <items>
+	        <IconTabFilter
+                   icon="sap-icon://hint"
+                   iconColor="Positive"
+                     key="Information"
+                     id="info"
+                     showAll="false"
+                     text = "Info">
+                    <mvc: JSON View viewName = "accounts.view"></mvc:JSON View>
+                  </IconTabFilter>
+	    </items>
+	  </IconTabBar>
+		</content>
+	</Page>
+</core:View>

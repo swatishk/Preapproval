@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+       <head>
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   			  <script src="resources/sap-ui-core.js"
+                      id="sap-ui-bootstrap"
+                      data-sap-ui-libs="sap.ui.commons, sap.m, sap.ui.core , sap.ui.layout"
+                      data-sap-ui-theme="sap_bluecrystal"
+                      data-sap-ui-xx-test-mobile = "true"
+                      data-sap-ui-xx-fakeOS="android">
+              </script>
+				<script src="phonegap.js"></script>
+              <!-- only load the mobile lib "sap.m" and the "sap_mvi" theme -->
+			  
+   			  <script>
+			         sap.ui.localResources("st4_poc");
+			         sap.ui.xmlview("appView", "st4_poc.App").placeAt("content");
+   			  </script>
+
+       </head>
+       <body class="sapUiBody" >
+              <div id="content"></div>
+       </body>
+</html>
+
+
